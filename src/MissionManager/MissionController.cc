@@ -2096,6 +2096,8 @@ void MissionController::_updateTimeout()
                 case MAV_CMD_NAV_TAKEOFF:
                 case MAV_CMD_NAV_WAYPOINT:
                 case MAV_CMD_NAV_LAND:
+                case MAV_CMD_NAV_ENTER_STALL:
+                case MAV_CMD_NAV_STALL:
                 if(pSimpleItem->coordinate().isValid()) {
                     if((MAV_CMD)pSimpleItem->command() == MAV_CMD_NAV_TAKEOFF) {
                         takeoffCoordinate = pSimpleItem->coordinate();

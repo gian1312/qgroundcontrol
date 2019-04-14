@@ -1059,6 +1059,62 @@
             }
         },
         { "id": 30001, "rawName": "MAV_CMD_PAYLOAD_PREPARE_DEPLOY", "friendlyName": "Payload prepare deploy" },
-        { "id": 30002, "rawName": "MAV_CMD_PAYLOAD_CONTROL_DEPLOY", "friendlyName": "Payload control deploy" }
+        { "id": 30002, "rawName": "MAV_CMD_PAYLOAD_CONTROL_DEPLOY", "friendlyName": "Payload control deploy" },
+        {
+            "id":                   31001,
+            "rawName":              "MAV_CMD_NAV_STALL",
+            "friendlyName":         "DUMMY",
+            "description":          "Dummy Dummy Dummy.",
+            "specifiesCoordinate":  true,
+            "friendlyEdit":         true,
+            "category":             "Basic",
+            "param1": {
+                "label":            "Hold",
+                "units":            "secs",
+                "default":          0,
+                "decimalPlaces":    0
+            },
+            "param2": {
+                "label":            "Acceptance",
+                "units":            "m",
+                "default":          3,
+                "decimalPlaces":    2
+            },
+            "param3": {
+                "label":            "PassThru",
+                "units":            "m",
+                "default":          0,
+                "decimalPlaces":    2
+            },
+            "param4": {
+                "label":            "Heading",
+                "units":            "radians",
+                "nanUnchanged":     true,
+                "default":          null,
+                "decimalPlaces":    2
+            }
+        },
+{
+            "id":                   31000,
+            "rawName":              "MAV_CMD_NAV_ENTER_STALL",
+            "friendlyName":         "Stall entry",
+            "description":          "Enter stall at this position",
+            "specifiesCoordinate":  true,
+            "friendlyEdit":         true,
+            "category":             "Basic",
+            "param1": {
+                "label":            "Abort Alt",
+                "units":            "m",
+                "default":          0,
+                "decimalPlaces":    2
+            },
+            "param4": {
+                "label":            "Heading",
+                "units":            "radians",
+                "nanUnchanged":     true,
+                "default":          null,
+                "decimalPlaces":    2
+            }
+        }
     ]
 }
