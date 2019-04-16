@@ -50,8 +50,8 @@ PX4FirmwarePlugin::PX4FirmwarePlugin(void)
     , _rtlFlightMode        (tr("Return"))
     , _landingFlightMode    (tr("Land"))
     , _preclandFlightMode   (tr("Precision Land"))
-    , _enterstallFlightMode (tr("Precision Land"))
-    , _stallFlightMode      (tr("Precision Land"))
+    , _enterstallFlightMode (tr("Enter Stall"))
+    , _stallFlightMode      (tr("Maintain Stall"))
     , _rtgsFlightMode       (tr("Return to Groundstation"))
     , _followMeFlightMode   (tr("Follow Me"))
     , _simpleFlightMode     (tr("Simple"))
@@ -113,6 +113,8 @@ PX4FirmwarePlugin::PX4FirmwarePlugin(void)
         &_followMeFlightMode,
         &_landingFlightMode,
         &_preclandFlightMode,
+        &_enterstallFlightMode,
+        &_stallFlightMode,
         &_readyFlightMode,
         &_rtgsFlightMode,
         &_takeoffFlightMode,
